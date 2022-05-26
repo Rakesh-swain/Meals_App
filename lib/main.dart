@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './screeens/filters_screen.dart';
 import './screeens/meal_detail_screen.dart';
 import './screeens/categories_screen.dart';
 import './screeens/category_meals_screen.dart';
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
         '/': (ctx) => TabsScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
+        FilterScreen.routeName: (ctx) => FilterScreen(),
       },
       // We dont neeed onGenerateRoute in this App
       onGenerateRoute: (settings) {
